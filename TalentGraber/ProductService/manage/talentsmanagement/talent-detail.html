@@ -1,0 +1,12 @@
+﻿<div>
+    <span>list of the github repos current user contributed to:</span>
+    <ul>
+        <!-- ko template: { ifnot:loading, foreach: contributions } -->
+        <li>
+            <label>Github:</label>
+            <span data-bind="text:RepoUrl" />
+            <span data-bind="text:CacheCommitNumber"></span>
+        </li>
+        <!-- /ko -->
+    </ul>
+</div>

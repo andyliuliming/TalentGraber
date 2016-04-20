@@ -1,0 +1,19 @@
+﻿<form class="githubrepo-detail-box form" data-bind="ifnot:loading">
+    <div class="form-line">
+        <div class="form-left">
+            <lable>Url:</lable>
+        </div>
+        <div class="form-right">
+            <input type="text" id="add-githubrepo-text" data-bind="value:githubRepo.Url, valueUpdate:'afterkeydown'" />
+        </div>
+        <div class="form-line">
+            <div class="form-left">
+                <input class="btn new-or-update-githubrepo-btn" 
+                       type="button" value="Submt" data-bind="click: saveGithubRepo, enable:enableSave" />
+            </div>
+        </div>
+        <div>
+            <span class="error-msg" data-bind="text:error"></span>
+        </div>
+    </div>
+</form>

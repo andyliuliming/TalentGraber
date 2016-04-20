@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>修改密码</title>
+<link type="text/css" rel="stylesheet" href="/shared/common.css" />
+<link type="text/css" rel="stylesheet" href="/shared/dialog.css" />
+<link type="text/css" rel="stylesheet" href="changepass.css" />
+</head>
+<body>
+<div class="change-pass-box dialog theme-border-color">
+<div class="dialog-header theme-header-color">
+<span class="dialog-header-text">修改密码</span>
+</div>
+<form class="form">
+<div class="form-line">
+<div class="form-left"><label>手机号</label></div>
+<div class="form-right">
+<input class="text-input" type="text" data-bind="value:phone, valueUpdate:'afterkeydown'" />
+<span class="error-text theme-error-text-color theme-error-text-font-size" data-bind='visible: phone.hasError, text: phone.validationMessage'> </span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="form-line">
+<div class="form-left"><label>验证码</label></div>
+<div class="form-right">
+<input class="text-input verify-code-input" type="text" data-bind="value:verifyCode, valueUpdate:'afterkeydown'" />
+<input type="button" class="btn theme-btn-color verify-code-btn" value="获取" data-bind="click:getVerifyCode, enable:enableFetch, value:fetchBtnText" />
+<span class="error-text theme-error-text-color theme-error-text-font-size" data-bind='visible: verifyCode.hasError, text: verifyCode.validationMessage'> </span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="form-line">
+<div class="form-left"><label>密码</label></div>
+<div class="form-right">
+<input class="text-input" type="password" data-bind="value:password, valueUpdate:'afterkeydown'" />
+<span class="error-text theme-error-text-color theme-error-text-font-size" data-bind='visible: password.hasError, text: password.validationMessage'> </span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="form-line">
+<div class="form-left"><label>确认密码</label></div>
+<div class="form-right">
+<input class="text-input" type="password" data-bind="value:confirm, valueUpdate:'afterkeydown'" />
+<span class="error-text theme-error-text-color theme-error-text-font-size" data-bind='visible: confirm.hasError, text: confirm.validationMessage'> </span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="form-line">
+<div class="form-left"></div>
+<div class="form-right">
+<input type="button" class="change-pass-btn btn theme-btn-color" value="修改密码" data-bind="click:changePass, enable:enableSubmit" />
+</div>
+<div class="clear"></div>
+</div>
+<div class="form-line">
+<div class="form-left"></div>
+<div class="form-right">
+<span class="error-text theme-error-text-color theme-error-text-font-size" data-bind='visible: error, text: error'> </span>
+</div>
+<div class="clear"></div>
+</div>
+</form>
+</div>
+<script type="text/javascript" data-main="changepass" src="../lib/require.js"></script>
+</body>
+</html>

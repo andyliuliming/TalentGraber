@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>UserLogin</title>
+<link type="text/css" rel="stylesheet" href="../../common/shared/common.css" />
+<link type="text/css" rel="stylesheet" href="../../common/shared/dialog.css" />
+<link type="text/css" rel="stylesheet" href="./login.css" />
+</head>
+<body>
+<div class="login-box dialog theme-border-color">
+<div class="dialog-header theme-header-color">
+<span class="dialog-header-text">UserLogin</span>
+</div>
+<form class="form">
+<div class="form-line">
+<div class="form-left"><label>UserName:</label></div>
+<div class="form-right">
+<input class="text-input" type="text" data-bind="value:username, valueUpdate:'afterkeydown'" />
+<span class="error-text theme-error-text-color theme-error-text-font-size" data-bind='visible: username.hasError, text: username.validationMessage'> </span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="form-line">
+<div class="form-left"><label>Password:</label></div>
+<div class="form-right">
+<input class="text-input" type="password" data-bind="value:password, valueUpdate:'afterkeydown'" />
+<span class="error-text theme-error-text-color theme-error-text-font-size" data-bind='visible: password.hasError, text: password.validationMessage'> </span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="form-line">
+<div class="form-left"></div>
+<div class="form-right">
+<input type="checkbox" data-bind="checked:rememberMe"><span>Remember Me</span>
+<a class="theme-link-color" href="/changepass/changepass.html">Forget Password?</a>
+</div>
+<div class="clear"></div>
+</div>
+<div class="form-line">
+<div class="form-left"></div>
+<div class="form-right">
+<input type="button" class="login-btn btn theme-btn-color" value="Login" data-bind="click:login, enable:enableSubmit" />
+<a class="theme-link-color" href="../register/register.html">Register New User</a>
+</div>
+<div class="clear"></div>
+</div>
+<div class="form-line">
+<div class="form-left"></div>
+<div class="form-right">
+<span class="error-text theme-error-text-color" data-bind='visible: error, text: error'> </span>
+</div>
+<div class="clear"></div>
+</div>
+</form>
+</div>
+<script type="text/javascript" data-main="login" src="../../lib/require.js"></script>
+</body>
+</html>

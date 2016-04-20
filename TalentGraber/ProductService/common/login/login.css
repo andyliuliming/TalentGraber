@@ -1,0 +1,13 @@
+﻿.login-box {    
+    position: relative;
+    width: 500px;
+    left: -290px;
+    margin-left: 50%;
+    margin-top: 10%;
+}
+
+.login-box .login-btn{
+    display:inline-block;
+    width:70px;
+    height:35px;
+}

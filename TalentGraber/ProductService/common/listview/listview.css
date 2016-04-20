@@ -1,0 +1,46 @@
+﻿.table-filters {
+    margin:10px 0px 10px 0px;
+    text-align:left;
+    cursor:pointer;
+}
+
+.table-filters label {
+    margin: 5px;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.table td {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.table td {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.table thead td {
+    padding:10px;
+    min-width: 50px;
+    color: #fff;
+}
+
+.table td input {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.table .table-loading,
+.table .table-error{
+    padding: 10px;
+    text-align: center;
+}
+
+.listview {
+    width:100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

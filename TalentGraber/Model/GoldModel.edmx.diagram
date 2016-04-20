@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a75c88e297004510a46d61e4af123943" Name="Diagram1" ZoomLevel="80" >
+        <EntityTypeShape EntityType="GoldModel.GithubRepo" Width="2.625" PointX="0.875" PointY="1.25" />
+        <EntityTypeShape EntityType="GoldModel.TalentCandidate" Width="3" PointX="3.875" PointY="1.25" />
+        <EntityTypeShape EntityType="GoldModel.GithubAccount" Width="2.625" PointX="0.875" PointY="3" />
+        <EntityTypeShape EntityType="GoldModel.TalentGraberUser" Width="2.75" PointX="1.75" PointY="5.25" />
+        <EntityTypeShape EntityType="GoldModel.UserToken" Width="2.5" PointX="6" PointY="5.25" />
+        <EntityTypeShape EntityType="GoldModel.ContributerToRepo" Width="6" PointX="7.625" PointY="1.25" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

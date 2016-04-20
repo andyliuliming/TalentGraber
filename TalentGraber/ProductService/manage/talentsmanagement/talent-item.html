@@ -1,0 +1,22 @@
+﻿<tr class="talent-item">
+<!-- ko with: talentCandidate-->
+<td class="theme-border-color">
+<span data-bind="text:Id"></span>
+</td>
+<td class="theme-border-color">
+<span data-bind="text:Name"></span>
+</td>
+<td class="theme-border-color">
+<span data-bind="text:Company"></span>
+</td>
+<td class="theme-border-color">
+<span data-bind="text:Location"></span>
+</td>
+<td class="theme-border-color">
+<span data-bind="text:CacheTotalCommits"></span>
+</td>
+<td class="theme-border-color">
+<a class="theme-link-color" data-bind="attr:{'href':'#talent-detail?Id=' + Id()}">Details</a>
+</td>
+<!-- /ko -->
+</tr>

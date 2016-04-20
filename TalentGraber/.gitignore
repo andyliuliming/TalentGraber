@@ -4,6 +4,19 @@
 # User-specific files
 *.suo
 *.user
+*.sln.docstates
+
+# Build results
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+
+# Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
+!packages/*/build/
 *.userosscache
 *.sln.docstates
 
@@ -29,6 +42,8 @@ bld/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
+*_i.c
+*_p.c
 # NUNIT
 *.VisualState.xml
 TestResult.xml
@@ -37,10 +52,6 @@ TestResult.xml
 [Dd]ebugPS/
 [Rr]eleasePS/
 dlldata.c
-
-# DNX
-project.lock.json
-artifacts/
 
 *_i.c
 *_p.c
@@ -64,8 +75,10 @@ artifacts/
 *.vssscc
 .builds
 *.pidb
-*.svclog
+*.log
 *.scc
+
+*.svclog
 
 # Chutzpah Test files
 _Chutzpah*
@@ -104,6 +117,9 @@ _TeamCity*
 *.dotCover
 
 # NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+
 _NCrunch_*
 .*crunch*.local.xml
 
@@ -131,6 +147,14 @@ DocProject/Help/html
 publish/
 
 # Publish Web Output
+*.Publish.xml
+
+# NuGet Packages Directory
+## TODO: If you have NuGet Package Restore enabled, uncomment the next line
+#packages/
+
+# Windows Azure Build Output
+csx
 *.[Pp]ublish.xml
 *.azurePubxml
 # TODO: Comment the next line if you want to checkin your web deploy settings 
@@ -154,28 +178,29 @@ csx/
 # Windows Store app package directory
 AppPackages/
 
-# Visual Studio cache files
-# files ending in .cache can be ignored
-*.[Cc]ache
-# but keep track of directories ending in .cache
-!*.[Cc]ache/
-
 # Others
+sql/
+*.Cache
+=======
+*.[Cc]ache
 ClientBin/
 [Ss]tyle[Cc]op.*
 ~$*
 *~
 *.dbmdl
-*.dbproj.schemaview
+*.[Pp]ublish.xml
+*.pfx
+*.publishsettings
 *.pfx
 *.publishsettings
 node_modules/
 bower_components/
-orleans.codegen.cs
 
 # RIA/Silverlight projects
 Generated_Code/
 
+# Backup & report files from converting an old project file to a newer
+# Visual Studio version. Backup files are not needed, because we have git ;-)
 # Backup & report files from converting an old project file
 # to a newer Visual Studio version. Backup files are not needed,
 # because we have git ;-)
@@ -185,6 +210,32 @@ UpgradeLog*.XML
 UpgradeLog*.htm
 
 # SQL Server files
+App_Data/*.mdf
+App_Data/*.ldf
+
+
+#LightSwitch generated files
+GeneratedArtifacts/
+_Pvt_Extensions/
+ModelManifest.xml
+
+# =========================
+# Windows detritus
+# =========================
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac desktop service store files
+.DS_Store
+HappyZLService/packages
 *.mdf
 *.ldf
 
@@ -205,38 +256,13 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
+# talent graber specific files
+TalentGraber2/PortalService/main-built.js
+
+*.msbuild.log
+
+*.xcuserstate
 
 
 
-.metadata
-*.class
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-
-/AzureTerminal/AzureTerminalAzureService/ecf/AzureTerminalWebRoleContent
-/AzureTerminal/buildazureterminal/message.properties
-/AzureTerminal/buildazureterminal/ostc
-/VMEncryption/dist
-/AzureNativeLinuxAgent/autom4te.cache
-/AzureNativeLinuxAgent/src/.deps
-/AzureNativeLinuxAgent/src/*.o
-/AzureNativeLinuxAgent/stamp-h1
-/AzureNativeLinuxAgent/src/AzureNativeLinuxAgent.exe
-AzureNativeLinuxAgent/configure
-AzureNativeLinuxAgent/AzureNativeLinuxAgent.vcxproj.filters
-AzureNativeLinuxAgent/src/AzureNativeLinuxAgent
-AzureNativeLinuxAgent/Makefile
-AzureNativeLinuxAgent/src/Makefile
-
-AzureNativeLinuxAgent/config.status
-TalentGraber/ProductService/management-main-built.js

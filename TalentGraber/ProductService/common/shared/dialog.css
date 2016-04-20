@@ -1,0 +1,61 @@
+﻿.form {
+}
+
+    .form .form-line {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+        .form .form-line .text-input {
+            width: 180px;
+        }
+
+        .form .form-line .verify-code-input {
+            width: 100px;
+        }
+
+    .form .verify-code-btn {
+        width: 70px;
+        height: 21px;
+        padding: 0px;
+        margin-left: 5px;
+    }
+
+
+.dialog {
+    position: relative;
+    width: 520px;
+    left: -300px;
+    margin-left: 50%;
+    margin-top: 10%;
+    border-width: 1px;
+    border-style: solid;
+}
+
+    .dialog .form {
+        margin: 5px 0px 5px 50px;
+    }
+
+.dialog-header {
+    height: 50px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+    .dialog-header .dialog-header-text {
+        font-size: 35px;
+    }
+
+.dialog .form .form-left {
+    float: left;
+    width: 90px;
+}
+
+.dialog .form .form-right {
+    float: right;
+    width: 350px;
+}
+
+.dialog .form .error-text {
+    /*font-size: 12px;*/
+}

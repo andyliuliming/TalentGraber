@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="ProductAzureService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="ProductService">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="GoldModelContainer" value="Provider=System.Data.SqlClient;Metadata=res://*/GoldModel.csdl|res://*/GoldModel.ssdl|res://*/GoldModel.msl;Provider Connection String='Data Source=talentgraberdatabase.database.chinacloudapi.cn;initial catalog=talentgrabergold;persist security info=True;user id=TalentGraber;password=User@123;MultipleActiveResultSets=True;App=EntityFramework';" />
+      <Setting name="SearchServiceAddress" value="{SearchServiceAddress}" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="WorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="GoldModelContainer" value="Provider=System.Data.SqlClient;Metadata=res://*/GoldModel.csdl|res://*/GoldModel.ssdl|res://*/GoldModel.msl;Provider Connection String='Data Source=talentgraberdatabase.database.chinacloudapi.cn;initial catalog=talentgrabergold;persist security info=True;user id=TalentGraber;password=User@123;MultipleActiveResultSets=True;App=EntityFramework';" />
+      <Setting name="ProductServiceAddress" value="http://localhost:64130/" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

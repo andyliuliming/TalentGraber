@@ -1,0 +1,24 @@
+﻿<div class="table-filters" data-bind="foreach:tags">
+<input type="radio" name="listFilter" data-bind="value:filter, checked:$parent.filter, attr:{'id':name}" /><label data-bind="text:name, attr:{'for':name}"></label>
+</div>
+<div class="table-search">
+<input type="text" name="search-text" data-bind="value:searchFieldText, executeOnEnter:enterKeyPressed"/>
+<input class="searchbutton" type="button" data-bind="click:search" value="Search"/>
+</div>
+<table class="table listview">
+<thead class="table-header theme-header-color">
+<tr class="table-row" data-bind="foreach: headers">
+<td class="theme-border-color" data-bind="text: name"></td>
+</tr>
+</thead>
+<tbody class="table-body">
+<tr><td class="table-loading theme-border-color" data-bind="visible:loading, attr:{'colspan':headers.length + 1}">Loading...</td></tr>
+<tr><td class="table-error theme-error-text-color theme-border-color" data-bind="visible:error(), text:error(), attr:{'colspan':headers.length + 1}"></td></tr>
+<!-- ko template: { ifnot:loading, name: itemTmplId, foreach: itemList } -->
+<!-- /ko -->
+</tbody>
+</table>
+<div>
+<input class="btn" type="button" data-bind="click:previousPage, enable: skip >= top" value="上一页" />
+<input class="btn" type="button" data-bind="click:nextPage, enable: itemList().length >= top" value="下一页" />
+</div>

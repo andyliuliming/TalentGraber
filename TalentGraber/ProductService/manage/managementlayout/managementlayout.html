@@ -1,0 +1,31 @@
+﻿<div class="main" data-bind="if:currView()">
+<div class="header theme-header-color theme-header-text-color ">
+<span class="header-title" data-bind="text:LayoutTitle"></span>
+<a href="#" class="header-login theme-link-color" data-bind="click:logout, clickBubble:false">Logout</a>
+<span class="header-login">&nbsp;</span>
+<span class="header-login header-login-name" data-bind="text:userName">You</span>
+<span class="header-login">Welcome,</span>
+</div>
+<div class="center">
+<div unselectable="on" class="nav-menu theme-foreground-color" data-bind="foreach:views">
+<!-- ko ifnot:parent -->
+<div class="nav-menu-item" data-bind="css:{'nav-menu-item-selected': $root.currView().hash.indexOf(hash)===0}">
+<a class="theme-link-color" data-bind="text:title, attr:{'href': '#' + hash}">
+</a>
+</div>
+<!-- /ko -->
+</div>
+<div class="content theme-foreground-color">
+<div class="nav-bar" unselectable="on">
+<!--ko foreach:path-->
+<div class="nav-bar-item">
+<a class="theme-link-color" data-bind="text:title, attr:{'href': '#' + hash}">
+</a>
+</div><!-- /ko --><div class="clear"></div>
+</div>
+<div class="content-box" data-bind="template:{name:currView().tmpl, data:currView().model}">
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>

@@ -1,0 +1,8 @@
+﻿"%windir%\Microsoft.NET\Framework\v4.0.30319\EdmGen.exe" /nologo /language:CSharp /mode:ViewGeneration "/inssdl:$(TargetDir)GoldModel.ssdl" "/incsdl:$(TargetDir)GoldModel.csdl" "/inmsl:$(TargetDir)GoldModel.msl" "/outviews:$(ProjectDir)GoldModel.Views.cs" /targetVersion:4.5
+
+
+XCOPY "$(TargetDir)GoldModel.csdl" "$(ProjectDir)" /R /Y 
+XCOPY "$(TargetDir)GoldModel.ssdl" "$(ProjectDir)" /R /Y 
+XCOPY "$(TargetDir)GoldModel.msl" "$(ProjectDir)" /R /Y
+
+

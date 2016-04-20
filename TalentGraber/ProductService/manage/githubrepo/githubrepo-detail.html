@@ -1,0 +1,12 @@
+﻿<div>
+    <span>talents contributed to this repository:</span>
+    <ul>
+        <!-- ko template: { ifnot:loading, foreach: contributions } -->
+        <li>
+            <label>Talent:</label>
+            <span data-bind="text:TalentCandidateName" />
+            <span data-bind="text:CacheCommitNumber"></span>
+        </li>
+        <!-- /ko -->
+    </ul>
+</div>
