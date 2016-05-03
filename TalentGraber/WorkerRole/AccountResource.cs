@@ -37,7 +37,7 @@ namespace WorkerRole
 
         public string GetCurrentAccessToken()
         {
-            if(githubAccounts==null||githubAccounts.Count==0)
+            if (githubAccounts == null || githubAccounts.Count == 0)
             {
                 githubAccounts = db.GithubAccounts.ToList<GithubAccount>();
             }

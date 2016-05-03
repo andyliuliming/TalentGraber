@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 04/14/2016 16:49:29
--- Generated from EDMX file: C:\Personal\andliu\TalentGraber\Model\GoldModel.edmx
+-- Date Created: 05/03/2016 16:15:40
+-- Generated from EDMX file: C:\Users\andliu\Documents\GitHub\TalentGraber\TalentGraber\Model\GoldModel.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -58,7 +58,7 @@ CREATE TABLE [dbo].[TalentCandidates] (
     [Email] nvarchar(max)  NOT NULL,
     [Company] nvarchar(max)  NOT NULL,
     [Location] nvarchar(max)  NOT NULL,
-    [Login] nvarchar(max)  NOT NULL,
+    [Login] nvarchar(100)  NOT NULL,
     [Name] nvarchar(max)  NOT NULL,
     [Followers] nvarchar(max)  NOT NULL,
     [ReposUrl] nvarchar(max)  NOT NULL,

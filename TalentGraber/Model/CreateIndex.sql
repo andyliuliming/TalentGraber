@@ -1,6 +1,11 @@
 USE [talentgrabergold]
 GO
 
+--------TalentCandidates ---------------------
+CREATE NONCLUSTERED INDEX [IX_TalentCandidates_0]
+    ON [dbo].[TalentCandidates]([Login] ASC);
+GO
+
 --------ContributerToRepoes ---------------------
 CREATE NONCLUSTERED INDEX [IX_ContributerToRepoes_0]
     ON [dbo].[ContributerToRepoes]([RepoId] ASC);

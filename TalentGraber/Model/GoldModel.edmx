@@ -28,7 +28,7 @@
     <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Company" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Location" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" Nullable="false" MaxLength="100" />
     <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Followers" Type="nvarchar(max)" Nullable="false" />
     <Property Name="ReposUrl" Type="nvarchar(max)" Nullable="false" />
@@ -102,7 +102,7 @@
           <Property Name="Email" Type="String" Nullable="false" />
           <Property Name="Company" Type="String" Nullable="false" />
           <Property Name="Location" Type="String" Nullable="false" />
-          <Property Name="Login" Type="String" Nullable="false" />
+          <Property Name="Login" Type="String" Nullable="false" MaxLength="100" />
           <Property Name="Name" Type="String" Nullable="false" />
           <Property Name="Followers" Type="String" Nullable="false" />
           <Property Name="ReposUrl" Type="String" Nullable="false" />

@@ -6,8 +6,8 @@ INSERT INTO [dbo].[GithubAccounts] ([Id], [UserName], [Password]) VALUES (6, N't
 SET IDENTITY_INSERT [dbo].[GithubAccounts] OFF
 
 SET IDENTITY_INSERT [dbo].[GithubRepoes] ON
-INSERT INTO [dbo].[GithubRepoes] ([Id], [Url]) VALUES (1, N'https://github.com/Azure/azure-linux-extensions.git')
-INSERT INTO [dbo].[GithubRepoes] ([Id], [Url]) VALUES (2, N'https://github.com/cloudfoundry/cf-release.git')
+INSERT INTO [dbo].[GithubRepoes] ([Id], [Url]) VALUES (1, N'https://github.com/cloudfoundry/cf-release.git')
+INSERT INTO [dbo].[GithubRepoes] ([Id], [Url]) VALUES (2, N'https://github.com/Azure/azure-linux-extensions.git')
 SET IDENTITY_INSERT [dbo].[GithubRepoes] OFF
 
 SET IDENTITY_INSERT [dbo].[TalentGraberUsers] ON

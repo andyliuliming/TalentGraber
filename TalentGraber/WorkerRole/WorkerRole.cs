@@ -189,12 +189,9 @@ namespace WorkerRole
                 while (true)
                 {
                     string urlParameters = repoBaseUri + "?page=" + startPage + "&per_page=" + perPage;
+
                     List<CommitDetail> pagedCommitDetails = commitInfoCaller.CallApi("get", urlParameters);
-                    if (pagedCommitDetails == null)
-                    {
-                        break;
-                    }
-                    else if (pagedCommitDetails.Count == 0)
+                    if (pagedCommitDetails == null || pagedCommitDetails.Count == 0)
                     {
                         break;
                     }

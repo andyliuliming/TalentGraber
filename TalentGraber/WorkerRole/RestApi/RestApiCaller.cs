@@ -87,7 +87,8 @@ namespace ExtractBase.RestApi
                 }
                 catch (TalentGraberException e)
                 {
-                    if (e.StatusCode == HttpStatusCode.Forbidden)
+                    if (e.StatusCode == HttpStatusCode.Forbidden
+                        ||e.StatusCode == HttpStatusCode.Unauthorized)
                     {
                         outOfResourceFallback();
                         Thread.Sleep(30000);
