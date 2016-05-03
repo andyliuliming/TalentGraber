@@ -240,3 +240,4 @@ AzureNativeLinuxAgent/src/Makefile
 
 AzureNativeLinuxAgent/config.status
 TalentGraber/ProductService/management-main-built.js
+TalentGraber/AutoDeploy/pslib/common-credential.ps1

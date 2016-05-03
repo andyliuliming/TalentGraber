@@ -15,9 +15,9 @@ $databaseEdition="Basic"
 #https://msdn.microsoft.com/en-us/library/Dn546722.aspx
 $databaseVersion=2.0
 $databaseMaxSize=(2*1024*1024*1024)# this is in bytes
-$databaseUserName="TalentGraber"
-$databasePassword="User@123"
-$databaseServerName="talentgraberdatabase"
+$databaseUserName=""
+$databasePassword=""
+$databaseServerName=""
 
 ######################  azure service related  ############################
 $AffinityGroupName = "TalentGraberAffinityGroup"
