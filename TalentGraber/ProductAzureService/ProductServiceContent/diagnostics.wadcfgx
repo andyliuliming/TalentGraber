@@ -30,7 +30,6 @@
         </PerformanceCounters>
       </DiagnosticMonitorConfiguration>
     </WadCfg>
-    <StorageAccount></StorageAccount>
   </PublicConfig>
   <PrivateConfig>
     <StorageAccount name="" key="" endpoint="" />

@@ -5,6 +5,8 @@ $location = "East Asia"
 $Environment = "AzureCloud"
 $subscriptionId="c4528d9e-c99a-48bb-b12d-fde2176a43b8"
 
+. .\pslib\common-credential.ps1
+
 ######################  azure service related  ############################
 $ProductServiceAddress="http://"+$ProductAzureServiceName+".chinacloudapp.cn"
 $StorageAccountEndpoint = "core.windows.net"
