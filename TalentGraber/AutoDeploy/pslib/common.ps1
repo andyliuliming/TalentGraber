@@ -19,6 +19,8 @@ $databaseUserName=""
 $databasePassword=""
 $databaseServerName=""
 
+.\pslib\common-credential.ps1
+
 ######################  azure service related  ############################
 $AffinityGroupName = "TalentGraberAffinityGroup"
 $ProductAzureServiceName = "TalentGraber"
