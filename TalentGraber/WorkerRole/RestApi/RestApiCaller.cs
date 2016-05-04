@@ -148,11 +148,15 @@ namespace ExtractBase.RestApi
             switch (method.ToLower())
             {
                 case "get":
-                    response = client.GetAsync(urlParameters).Result;
+                    Task<HttpResponseMessage> responseTask = client.GetAsync(urlParameters);
+                    responseTask.Wait();
+                    response = responseTask.Result;
                     if (response.StatusCode == HttpStatusCode.Accepted
                         || response.StatusCode == HttpStatusCode.OK)
                     {
-                        result = response.Content.ReadAsAsync<T>().Result;
+                        Task<T> task = response.Content.ReadAsAsync<T>();
+                        task.Wait();
+                        result = task.Result;
                         return result;
                     }
                     else

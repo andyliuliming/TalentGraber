@@ -21,7 +21,7 @@ namespace WorkerRole
 
         public string GetNextAccessToken()
         {
-            if (accountIndex < this.githubAccounts.Count)
+            if (accountIndex < this.githubAccounts.Count && this.githubAccounts.Count != 1)
             {
                 accountIndex++;
                 string accessToken = AuthorizeUtil.GetToken(githubAccounts[accountIndex].UserName, githubAccounts[accountIndex].Password);
