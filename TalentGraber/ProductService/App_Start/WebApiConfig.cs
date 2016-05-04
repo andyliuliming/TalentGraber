@@ -35,6 +35,7 @@ namespace Macrodeek.StarDustProductService
             config.MapHttpAttributeRoutes();
 
             builder = new ODataConventionModelBuilder();
+            builder.EntitySet<GithubAccount>("GithubAccounts");
             builder.EntitySet<GithubRepo>("GithubRepoes");
             builder.EntitySet<TalentCandidate>("TalentCandidates");
             builder.EntitySet<UserToken>("UserTokens");

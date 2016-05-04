@@ -1,0 +1,27 @@
+﻿<form class="githubaccount-detail-box form" data-bind="ifnot:loading">
+    <div class="form-line">
+        <div class="form-left">
+            <lable>UserName:</lable>
+        </div>
+        <div class="form-right">
+            <input type="text" id="add-githubaccount-username" data-bind="value:githubAccount.UserName, valueUpdate:'afterkeydown'" />
+        </div>
+    </div>
+    <div class="form-line">
+        <div class="form-left">
+            <lable>Password:</lable>
+        </div>
+        <div class="form-right">
+            <input type="text" id="add-githubaccount-password" data-bind="value:githubAccount.Password, valueUpdate:'afterkeydown'" />
+        </div>
+    </div>
+    <div class="form-line">
+        <div class="form-left">
+            <input class="btn new-or-update-githubaccount-btn"
+                   type="button" value="Submit" data-bind="click: saveGithubAccount, enable:enableSave" />
+        </div>
+    </div>
+    <div>
+        <span class="error-msg" data-bind="text:error"></span>
+    </div>
+</form>

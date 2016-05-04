@@ -243,6 +243,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\GithubAccountsController.cs" />
     <Compile Include="Controllers\WarmersController.cs" />
     <Compile Include="Controllers\GithubRepoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -301,6 +302,15 @@
     <Content Include="management-index.html" />
     <Content Include="management-main-built.js" />
     <Content Include="management-main.js" />
+    <Content Include="manage\githubaccount\githubaccount-add.css" />
+    <Content Include="manage\githubaccount\githubaccount-add.html" />
+    <Content Include="manage\githubaccount\githubaccount-add.js" />
+    <Content Include="manage\githubaccount\githubaccount-item.css" />
+    <Content Include="manage\githubaccount\githubaccount-item.html" />
+    <Content Include="manage\githubaccount\githubaccount-item.js" />
+    <Content Include="manage\githubaccount\githubaccountmanagement.css" />
+    <Content Include="manage\githubaccount\githubaccountmanagement.html" />
+    <Content Include="manage\githubaccount\githubaccountmanagement.js" />
     <Content Include="manage\githubrepo\githubrepo-item.css" />
     <Content Include="manage\githubrepo\githubrepo-item.html" />
     <Content Include="manage\githubrepo\githubrepo-item.js" />

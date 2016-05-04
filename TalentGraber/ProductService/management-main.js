@@ -27,7 +27,10 @@
         "manage/githubrepo/githubrepomanagement",
         "manage/githubrepo/githubrepo-add",
         "manage/talentsmanagement/talent-detail",
-        "manage/githubrepo/githubrepo-detail"],
+        "manage/githubrepo/githubrepo-detail",
+        "manage/githubaccount/githubaccountmanagement",
+        "manage/githubaccount/githubaccount-add"
+        ],
         function ($,
             util,
             jcookie,
@@ -40,7 +43,9 @@
             githubrepo,
             githubrepoadd,
             talentdetail,
-            githubdetail) {
+            githubdetail,
+            githubaccount,
+            githubaccountadd) {
 
             util.checkAccess("/common/login/login.html");
 
@@ -50,6 +55,9 @@
             managementlayout.route("githubrepo-add", "Add Repo", githubrepoadd.tmplId, new githubrepoadd.GithubRepoAddViewModel(), "githubrepomanagement");
             managementlayout.route("talentmanagement", "Talents", talentmanagement.tmplId, new talentmanagement.TalentListViewModel);
             managementlayout.route("talent-detail", "Talent Detail", talentdetail.tmplId, new talentdetail.TalentDetailViewModel, "talentmanagement");
+
+            managementlayout.route("githubaccountmanagement", "Github Account", githubaccount.tmplId, new githubaccount.GithubAccountListViewModel);
+            managementlayout.route("githubaccount-add", "Add Github Account", githubaccountadd.tmplId, new githubaccountadd.GithubAccountAddViewModel(), "githubaccountmanagement");
             managementlayout.init();
 
         });
